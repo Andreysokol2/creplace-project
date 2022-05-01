@@ -1,0 +1,94 @@
+{% extends  'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .content {
+    padding-bottom: 165px;
+}
+    @media (max-width: 1041px){
+        footer{
+            bottom:auto;
+        }
+        .content {
+    padding-bottom: 186px;
+    }
+    }
+    footer{
+               height: 164px;
+    }
+    @media (max-width: 450px){
+
+    footer{
+               height: 134px;
+    }
+}
+</style>
+ <div class="container">
+     <div class="mini-logo-main">
+           <img src="https://i.ibb.co/HHMthJw/Creplace-Logo.jpg" alt="Creplace-Logo" border="0" style="height:100%;">
+     </div>
+     <img class="avatar wow animate__animated animate__fadeIn" src="https://i.ibb.co/5M49VW3/6d42f9711ef220f92044d4b1c466179d1.jpg" alt="6d42f9711ef220f92044d4b1c466179d1" border="0">
+<!--     <a href="{% url 'logout' %}" class="log-out-button">Выйти</a>-->
+     <span class="user_name wow animate__animated animate__fadeIn">{{user.first_name}}</span>
+<!--     <a href="{% url 'logout' %}" class="text-danger log-out-button"><img src="https://img.icons8.com/color/240/000000/exit.png" style="height:60px;"/></a>-->
+     <h1 class="text-center wow animate__animated animate__fadeIn">Ура!</h1>
+    <div class="account-text-block">
+        <div class="account-text-1 wow animate__animated animate__fadeIn" id="1">
+        Вы уже на Creplace! Огромное спасибо за участие в этом бета-тесте! Ты очень сильно поможешь развитию проекта, если напишешь свои идеи или что-нибудь ещё
+        в комментариях под <a href="https://www.youtube.com/c/OwlCoding" style="text-decoration:none;"><div class="link"> <img style="width:70px;" src="https://pngicon.ru/file/uploads/youtube-1-128x128.png" alt="youtube">
+        роликом на YouTube.</div></a>
+        </div>
+        <div class="account-text-1">
+
+        </div>
+<!--        <div class="youtube-video">-->
+<!--        <iframe width="560" height="315" src="https://www.youtube.com/embed/KsvcnK_ZPhY" title="YouTube video player"-->
+<!--                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+<!--        </div>-->
+    </div>
+ </div>
+    <div class="main-information-block">
+        <div class="container">
+            <img src="https://i.ibb.co/HTMkL3X/owl-coding-logo-3d-bezfona.png" alt="owl-coding-logo-3d-bezfona" border="0" id ="1" class="owl-coding-main-logo wow animate__animated animate__fadeIn" >
+<!--            <img src="https://i.ibb.co/y6MXBTS/new-logo-big.jpg" id="1" alt="new-logo-big" border="0" class="owl-coding-main-logo animate__animated animate__fadeIn">-->
+            <div class="main-information-text wow animate__animated animate__fadeIn">
+                Это первая бэта-версия сайта Creplace. Реализованы технологии регистрации и входа. В следующей части ролика мы реализуем систему смены пароля,
+                редактирования профиля ну и ещё что-нибудь
+            </div>
+        </div>
+    </div>
+     <div class="main-information-block-2">
+        <div class="container">
+            <div class="danat-icon-box">
+                <img src="https://pngimg.com/uploads/coin/coin_PNG36868.png" alt="new-logo-big" border="0" class="donat-icon-main wow animate__animated animate__fadeIn">
+            </div>
+            <div class="main-information-text-2 wow animate__animated animate__fadeIn" >
+                Вы можете поддержать проект материалльно, все деньги пойдут на оплату хостинга для этого сайта. Все донатеры будут упомянуты на
+                <a href="/donat" class="donat-link">странице сайта</a>
+            </div>
+            <a href="{% url 'login_user' %}" class="btn btn-primary btn-sm btn-block btn-main animate__animated animate__fadeIn">Задонатить</a>
+        </div>
+    </div>
+    <div class="main-information-block">
+        <div class="container telegram-container">
+<!--            <div class="telegram-main-logo-box">-->
+                <a href="https://t.me/owl_coding">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/640px-Telegram_logo.svg.png" id="1" alt="new-logo-big" border="0" class="telegram-main-logo wowanimate__animated animate__fadeIn">
+                </a>
+<!--            </div>-->
+            <div class="main-information-text wow animate__animated animate__fadeIn">
+                Более частые новости по разработке Creplace, вы можете найти в телеграмм канале Owl Coding, кликай по иконке и подписывайся!
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block footer %}
+<footer>
+    <div class="footer-list wow animate__animated animate__fadeIn">
+        <a class="footer-link" href="/"><span class="footer-list-item">Главная</span></a>
+        <a class="footer-link" href="/donat"><span class="footer-list-item">Донатеры</span></a>
+        <a class="footer-link" href="/aboutdata"><span class="footer-list-item">О проекте и данных</span></a>
+        <a class="footer-link logout-button" href="/logout"><span class="footer-list-item logout-button">Выйти из аккаунта</span></a>
+    </div>
+</footer>
+{% endblock %}

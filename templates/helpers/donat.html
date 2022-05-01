@@ -1,0 +1,39 @@
+{% extends  'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="mini-logo-main">
+           <img src="https://i.ibb.co/HHMthJw/Creplace-Logo.jpg" alt="Creplace-Logo" border="0" style="height:100%;">
+     </div>
+    <div class="donaters-list">
+        <h1 class="text-center">Инвесторы проекта Creplace</h1>
+        <h3 class="text-center">Люди, которые поддержали проект материально или как-то ещё:</h3>
+        <h3 class="investor">&#127942;Андрей Соколов</h3>
+        <h3 class="investor">&#127942;Максим Демидович</h3>
+    </div>
+    <a href="#about_donat" class="btn btn-primary btn-sm btn-block btn-main btn-w">Хочу так же</a>
+</div>
+    <div class="main-information-block-2">
+        <div class="container">
+            <div class="danat-icon-box" id="about_donat">
+                <img src="https://pngimg.com/uploads/coin/coin_PNG36868.png" alt="new-logo-big" border="0" class="donat-icon-main animate__animated animate__fadeIn">
+            </div>
+            <div class="main-information-text-2 animate__animated animate__fadeIn" >
+                Вы можете поддержать проект материалльно, все деньги пойдут на оплату хостинга для этого сайта. Все донатеры будут упомянуты на этой странице и получат
+                эксклюзивную роль и доступ в закрытый канала на Discord серевере Owl Coding
+            </div>
+            <a href="{% url 'login_user' %}" class="btn btn-primary btn-sm btn-block btn-main animate__animated animate__fadeIn">Задонатить</a><br>
+            <h4>Свои идеи пишите в комментариях под роликом!
+                Если хотите поучавствовать в разработке: creplace@yandex.ru или пишите в <a href="https://discord.gg/x9NyuU5spq" class="donat-link">Discord</a></h4>
+        </div>
+    </div>
+{% endblock %}
+{% block footer %}
+<footer>
+    <div class="footer-list">
+        <a class="footer-link" href="/"><span class="footer-list-item">Главная</span></a>
+        <a class="footer-link" href="/donat"><span class="footer-list-item">Донатеры</span></a>
+        <a class="footer-link" href="/aboutdata"><span class="footer-list-item">О проекте и данных</span></a>
+    </div>
+</footer>
+{% endblock %}

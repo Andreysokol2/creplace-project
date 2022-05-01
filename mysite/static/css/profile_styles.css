@@ -1,0 +1,19 @@
+.user_name{
+    font-size: 22px;
+    margin: 10px;
+    font-weight: 600;
+}
+.account-text-1{
+    font-size:23px;
+}
+.account-text-2{
+    font-size:23px;
+}
+.log-out-button{
+    float: right;
+    display: inline-block;
+    font-size: 22px;
+    color: red;
+    text-decoration: none;
+    padding-top: 35px;
+}

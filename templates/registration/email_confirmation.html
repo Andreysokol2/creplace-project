@@ -1,0 +1,30 @@
+{% extends  'base.html' %}
+{% load static %}
+{% block content %}
+        <style>
+    .container{
+<!--    max-width: 500px; !important-->
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+</style>
+<script src="{% static 'js/email_confirmation_script.js'%}"></script>
+<div class="container">
+    <div class="mini-logo-main">
+           <img src="https://i.ibb.co/HHMthJw/Creplace-Logo.jpg" alt="Creplace-Logo" border="0" style="height:100%;">
+     </div>
+    <h1 class="text-center heading-big">Мы отправили код подтверждения вам на эллектронную почту, для подтверждения регистрации введите его ниже</h1>
+    <form method="POST" class="code-form" action="{{ email }}"> {% csrf_token%}
+        <div class="form-floating mb-3">
+            <input type="text" name="code" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput" class="form-label">Ваш код</label>
+            {% if form.errors.first_name %}
+                    <div class="order-data-erors">&#128721;{{ form.errors.first_name }}</div>
+            {% endif %}
+        </div>
+       <div class="text-center login-btn-box">
+            <button type="submit" class="login-btn btn btn-primary text-center">ШКЫДЫШЬ</button>
+       </div>
+    </form>
+</div>
+{% endblock %}

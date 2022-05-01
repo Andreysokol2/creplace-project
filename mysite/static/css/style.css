@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+html, body{
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+  /*  overflow-y: hidden;
+    /*background-image:url("https://i.postimg.cc/1XBdh2NK/Vsem-shary-background-image.jpg");*/
+    /*background-color: #B5EAEA; */
+}
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+.content {
+  padding-bottom: 131px;
+}
+.logout-button{
+    color: #dc2241 !important;
+    font-weight: 600;
+}
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 123px;
+  background-color:#23272a;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-list-item{
+    color:#ffffff;
+    font-size: 25px;
+    padding: 9px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.footer-list-item:hover{
+    color:#04d579;
+}
+@media (max-width: 450px){
+    .footer-list-item{
+    color:#ffffff;
+    font-size: 20px;
+    padding: 9px;
+}
+footer {
+  height: 100px;
+}
+}
+.footer-link{
+    text-decoration: none;
+}
+.mb-3 {
+    margin-bottom: 10px!important;
+}
+.container{
+    max-width: 1180px; !important
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+.form-label{
+    font-size:20px;
+}
+.heading{
+    font-size:56px;
+    padding: 10px 0px;
+}
+@media (max-width: 1071px){
+.heading{
+    font-size:39px;
+}}
+.heading-big{
+    font-size:59px;
+}
+@media (max-width: 1071px){
+.heading-big{
+    font-size:35px;
+}
+}
+.errorlist{
+    display: inline-block;
+    list-style: none;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+.form-floating:last-child{
+    padding-bottom:5px;
+}
+.login-btn{
+    height: 100%;
+    margin: 10px;
+    padding: 20px;
+    width: 95%;
+    font-size: 24px;
+    border-radius: 70px;
+    background-color:#04d579;
+    border-color:#04d579;
+}
+.login-btn:hover{
+    background-color:#17ab6a;
+    border-color:#17ab6a;
+}
+.login-btn-box{
+    margin-top:40px;
+}
+.code-form{
+    padding-top:20px;
+        margin: 0 auto;
+         max-width: 500px; !important
+}
+.big-logo-main{
+    height:100px;
+    text-align:center;
+    margin-top:10px;
+}
+.hello-text-main{
+    font-size:32px;
+    padding:15px;
+    text-align:center;
+}
+.reg-buttons-main{
+    text-align:center;
+}
+.btn-main{
+     height: 100%;
+    margin: 10px;
+    padding: 20px;
+    width: 40%;
+    font-size: 28px;
+    border-radius: 70px;
+    background-color:#04d579;
+    border-color:#04d579;
+}
+.btn-main:focus{
+    color: #fff;
+    background-color: #04d579;
+    border-color: #04d579;
+    box-shadow: none;
+}
+@media (max-width: 1041px){
+    .btn-main{
+     height: 100%;
+    margin: 10px;
+    padding: 20px;
+    width: 92%;
+    font-size: 28px;
+    border-radius: 70px;
+    background-color:#04d579;
+    border-color:#04d579;
+}
+.hello-text-main{
+    font-size:24px;
+    padding:15px;
+    text-align:center;
+}
+}
+.btn-main:hover{
+    background-color:#17ab6a;
+    border-color:#17ab6a;
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #04d579;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(4 213 121 / 70%);
+}
+.main-information-block{
+    background-color: #f6f6f6;
+    height:100%;
+    margin-top:30px;
+    left:0;
+    width:100%;
+}
+.main-information-block-2{
+    background-color: #fffff;
+    height:100%;
+    margin-top:30px;
+    left:0;
+    width:100%;
+}
+.main-information-text{
+    font-size:23px;
+    padding: 10px 0px;
+    width:50%;
+    float:right;
+    padding:30px;
+}
+.main-information-text-2{
+    font-size:23px;
+    padding: 10px 0px;
+    width:50%;
+    float:left;
+    padding:43px;
+}
+.owl-coding-main-logo{
+    width:46%;
+}
+@media (max-width: 1041px){
+    .owl-coding-main-logo{
+    width:100%;
+    }
+    .main-information-text{
+    font-size:23px;
+    padding: 10px 0px;
+    width:100%;
+    float:right;
+    padding:0px;
+    text-align: center;
+    }
+    .main-information-text-2{
+    font-size:23px;
+    padding: 10px 0px;
+    width:100%;
+    float:left;
+    padding:0px;
+    text-align: center;
+    }
+}
+.not-have-account{
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.not-have-account:hover{
+    color: #17ab6a;
+}
+.mini-logo-main{
+    height: 60px;
+    text-align: center;
+    margin-top: 2px;
+}
+.avatar{
+    width: 120px;
+    border-radius: 50%;
+}
+.link{
+    font-size: 22px;
+    color: #000000;
+    font-weight: 600;
+}
+.donat-link{
+    color:#5659ef;
+    text-decoration: none;
+}
+.reverse-button-box{
+    margin-top: 17px;
+    text-align: center;
+}
+.donat-icon-main{
+    width:300px;
+    height:300px;
+}
+@media (min-width: 1041px){
+    .donat-icon-main{
+    float:right;
+    }
+    .btn-w{
+        display:none;
+    }
+}
+@media (max-width: 1041px){
+    .danat-icon-box{
+        text-align:center;
+    }
+    .telegram-main-logo-box{
+    text-align:center;
+    }
+    .telegram-container{
+    text-align:center;
+    }
+    .donat-icon-main{
+        padding-top:20px;
+    }
+    .main-information-block{
+        background-color:#ffffff;
+    }
+}
+.telegram-main-logo{
+    width:300px;
+    height:300px;
+    padding:10px;
+}
+.investor{
+     margin: 14px 0px;
+}
+.order-data-erors{
+    color:#ec1919;
+}
+

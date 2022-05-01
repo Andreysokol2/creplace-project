@@ -1,0 +1,66 @@
+{% extends  'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container">
+        <div class="big-logo-main">
+            <img src="https://i.ibb.co/HHMthJw/Creplace-Logo.jpg" alt="Creplace-Logo" border="0" style="height:100%;">
+        </div>
+        <div class="hello-text-main wow animate__animated animate__fadeIn">
+                Привет! Это creplace, здесь ты сможешь поделиться своим творчеством и найти людей с похожими интересами
+        </div>
+        <h1 style="padding-bottom:10px;" class="text-center wow animate__animated animate__fadeIn">Давай начнём!</h1>
+        <div class="reg-buttons-main">
+            <a href="{% url 'register' %}" class="btn btn-primary btn-sm btn-block btn-main">Зарегистрирваться</a><br>
+            <h3 class="text-center">ИЛИ</h3>
+           <a href="{% url 'login_user' %}" class="btn btn-primary btn-sm btn-block btn-main">Войти</a>
+        </div>
+    </div>
+    <div class="main-information-block">
+        <div class="container">
+            <img src="https://i.ibb.co/HTMkL3X/owl-coding-logo-3d-bezfona.png" alt="owl-coding-logo-3d-bezfona" border="0" id ="1" class="owl-coding-main-logo wow animate__animated animate__fadeIn" >
+<!--            <img src="https://i.ibb.co/y6MXBTS/new-logo-big.jpg" id="1" alt="new-logo-big" border="0" class="owl-coding-main-logo animate__animated animate__fadeIn">-->
+            <div class="main-information-text wow animate__animated animate__fadeIn">
+                Creplace - проект канала Owl Coding, и учавствовать в его бета-тестировании будут его подписчики! Это первая версия сайта, уже сейчас ты можешь зарегистрироваться и
+                начать помогать развитию проекта, пиши свои идеи под роликом на YouTube, этим ты поможешь развитию проета!
+            </div>
+        </div>
+    </div>
+    <div class="main-information-block-2">
+        <div class="container">
+            <div class="danat-icon-box">
+                <img src="https://pngimg.com/uploads/coin/coin_PNG36868.png" alt="new-logo-big" border="0" class="donat-icon-main wow animate__animated animate__fadeIn">
+            </div>
+            <div class="main-information-text-2 wow animate__animated animate__fadeIn" >
+                Вы можете поддержать проект материалльно, все деньги пойдут на оплату хостинга для этого сайта. Все донатеры будут упомянуты на
+                <a href="/donat" class="donat-link">странице сайта</a>
+            </div>
+            <a href="{% url 'login_user' %}" class="btn btn-primary btn-sm btn-block btn-main wow animate__animated animate__fadeIn">Задонатить</a>
+        </div>
+    </div>
+    <div class="main-information-block">
+        <div class="container telegram-container">
+<!--            <div class="telegram-main-logo-box">-->
+                <a href="https://t.me/owl_coding">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/640px-Telegram_logo.svg.png" alt="new-logo-big" border="0" class="telegram-main-logo wow animate__animated animate__fadeIn">
+                </a>
+<!--            </div>-->
+            <div class="main-information-text wow animate__animated animate__fadeIn">
+                Более частые новости по разработке Creplace, вы можете найти в телеграмм канале Owl Coding, кликай по иконке и подписывайся!
+            </div>
+        </div>
+    </div>
+    <div class="reverse-button-box wow animate__animated animate__fadeIn">
+        <div class="container">
+            <a href="#" class="btn btn-primary btn-sm btn-block btn-main">Назад</a>
+        </div>
+    </div>
+{% endblock %}
+{% block footer %}
+<footer>
+    <div class="footer-list wow animate__animated animate__fadeIn">
+        <a class="footer-link" href="/"><span class="footer-list-item">Главная</span></a>
+        <a class="footer-link" href="/donat"><span class="footer-list-item">Донатеры</span></a>
+        <a class="footer-link" href="/aboutdata"><span class="footer-list-item">О проекте и данных</span></a>
+    </div>
+</footer>
+{% endblock %}

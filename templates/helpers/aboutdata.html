@@ -1,0 +1,43 @@
+{% extends  'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="mini-logo-main">
+           <img src="https://i.ibb.co/HHMthJw/Creplace-Logo.jpg" alt="Creplace-Logo" border="0" style="height:100%;">
+     </div>
+    <div class="donaters-list">
+        <h1 class="text-center">О проекте и данных</h1>
+    </div>
+
+</div>
+<div class="main-information-block">
+        <div class="container">
+            <img src="https://i.ibb.co/HTMkL3X/owl-coding-logo-3d-bezfona.png" alt="owl-coding-logo-3d-bezfona" border="0" id ="1" class="owl-coding-main-logo wow animate__animated animate__fadeIn" >
+<!--            <img src="https://i.ibb.co/y6MXBTS/new-logo-big.jpg" id="1" alt="new-logo-big" border="0" class="owl-coding-main-logo animate__animated animate__fadeIn">-->
+            <div class="main-information-text wow animate__animated animate__fadeIn">
+                Creplace - проект канала Owl Coding, и учавствовать в его бета-тестировании будут его подписчики! Это первая версия сайта, уже сейчас ты можешь зарегистрироваться и
+                начать помогать развитию проекта, пиши свои идеи под роликом на YouTube, этим ты поможешь развитию проета!
+            </div>
+        </div>
+    </div>
+<div class="main-information-block-2">
+        <div class="container">
+            <div class="danat-icon-box">
+                <img src="https://cdn-icons-png.flaticon.com/512/901/901509.png" alt="new-logo-big" border="0" class="donat-icon-main wow animate__animated animate__fadeIn">
+            </div>
+            <div class="main-information-text-2 wow animate__animated animate__fadeIn" >
+                Creplace не передаёт данные пользователей тритим лицам, а пароли хранятся на сервере в захэшированном виде.
+            </div>
+            <a href="/" class="btn btn-primary btn-sm btn-block btn-main animate__animated animate__fadeIn">На главную</a>
+        </div>
+    </div>
+{% endblock %}
+{% block footer %}
+<footer>
+    <div class="footer-list">
+        <a class="footer-link" href="/"><span class="footer-list-item">Главная</span></a>
+        <a class="footer-link" href="/donat"><span class="footer-list-item">Донатеры</span></a>
+        <a class="footer-link" href="/aboutdata"><span class="footer-list-item">О проекте и данных</span></a>
+    </div>
+</footer>
+{% endblock %}
